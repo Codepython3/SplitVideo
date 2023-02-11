@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="side" id="side1">
+            <video src="bg (2).mp4" type="video/mp4" autoplay loop muted></video>
+        </div>
+        <div class="side" id="side2">
+            <video src="bg (2).mp4" type="video/mp4" autoplay loop muted></video>
+        </div>
+    </section>
+    <div class="content">
+        <h2>Enjoy The Life</h2>
+        <p>Get out of your comfort zone and into something exciting. <br>You can explore somewhere you already know, you don’t need to go abroad for an adventure!</p>
+    </div>
+    <script>
+        let side1 = document.getElementById('side1');
+        let side2 = document.getElementById('side2');
+
+        window.addEventListener('scroll', function(){
+            side1.style.left = -window.pageYOffset+'px';
+            side2.style.left = window.pageYOffset+'px';
+        })
+    </script>
+</body>
+</html>
